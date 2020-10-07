@@ -43,35 +43,53 @@
       color: #3e9f8e;
       cursor: pointer;
     }
-    .leftFloat {
+    .floatRight {
       display: flex;
       position: absolute;
-      left: 10vw;
+      padding-left: 800px;
       top: 35px;
       width: 400px;
       flex-direction: row;
       justify-content: space-around;
     }
-    .rightFloat {
+    .floatLeft {
       display: flex;
       position: absolute;
-      right: 15vw;
+      padding-right: 750px;
       top: 35px;
-      width: 300px;
+      width: 100%;
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: center;
     }
-    .footer {
+    .footerContainer {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       height: 60px;
       width: 100%;
-      align-items: flex-start;
-      justify-content: space-around;
+      align-items: center;
+      justify-content: flex-start;
       border-top: 2px solid lightgrey;
       margin-top: 50px;
       padding-top: 10px;
       background-color: white;
+    }
+    .footer {
+      display: flex;
+      flex-direction: row;
+      width: 800px;
+      justify-content: space-around;
+    }
+    .spacer {
+      width: 50px;
+    }
+    .smallLink:hover {
+      transition: .5s;
+      color: #3e9f8e;
+      cursor: pointer;
+    }
+    .smallLink {
+      padding: 0 10px;
+      transition: .5s;
     }
   </style>
 </head>
@@ -80,28 +98,29 @@
     <div class="pinkBanner">
       Spread Love! Complimentary Diamond Earrings with Purchase over $1,000
     </div>
-    <div class="leftFloat">
-      <div class="bLink">
+    <div class="floatLeft">
+      <div class="smallLink">
         800.691.0952
       </div>
-      <div class="bLink">
+      <div class="smallLink">
         Contact Us
       </div>
-      <div class="bLink">
+      <div class="smallLink">
         Virtual Appointment
       </div>
     </div>
-    <div class="rightFloat">
-      <div class="bLink">
+      <div class="spacer"></div>
+    <div class="floatRight">
+      <div class="smallLink">
         Search
       </div>
-      <div class="bLink">
+      <div class="smallLink">
         Log In
       </div>
-      <div class="bLink">
+      <div class="smallLink">
         Wish List
       </div>
-      <div class="bLink">
+      <div class="smallLink">
         Cart
       </div>
     </div>
@@ -131,18 +150,20 @@
   </div>
   <div id="gallery"></div>
   <div id="customerReviews"></div>
-  <div class="footer">
-    <div class="bLink">
-      About
-    </div>
-    <div class="bLink">
-      Customer Care
-    </div>
-    <div class="bLink">
-      Contact
-    </div>
-    <div class="bLink">
-      Newsletter
+  <div class="footerContainer">
+    <div class="footer">
+      <div class="smallLink">
+        About
+      </div>
+      <div class="smallLink">
+        Customer Care
+      </div>
+      <div class="smallLink">
+        Contact
+      </div>
+      <div class="smallLink">
+        Newsletter
+      </div>
     </div>
   </div>
 
