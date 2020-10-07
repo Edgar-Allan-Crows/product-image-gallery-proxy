@@ -2,8 +2,111 @@
 <head>
   <link rel="stylesheet" type="text/css" href="http://localhost:3004/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+  <style>
+    .bannerContainer {
+      display: flex;
+      flex-direction: column;
+      height: 100px;
+      width: 100%;
+      align-items: center;
+      justify-content: space-around;
+      border-bottom: 2px solid lightgrey;
+      margin-bottom: 50px;
+    }
+    .banner {
+      font-family: 'Yeseva One', cursive;
+      font-size: 40px;
+    }
+    .bannerLinks {
+      width: 900px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      height: 20px;
+      margin-bottom: 5px;
+      font-size: 17px;
+    }
+    .bLink {
+      transition: .5s;
+    }
+    .bLink:hover {
+      transition: .5s;
+      color: #3e9f8e;
+      cursor: pointer;
+    }
+    .leftFloat {
+      display: flex;
+      position: absolute;
+      left: 10vw;
+      top: 15px;
+      width: 400px;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .rightFloat {
+      display: flex;
+      position: absolute;
+      right: 15vw;
+      top: 15px;
+      width: 300px;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  </style>
 </head>
 <body>
+  <div class="bannerContainer">
+    <div class="leftFloat">
+      <div class="bLink">
+        800.691.0952
+      </div>
+      <div class="bLink">
+        Contact Us
+      </div>
+      <div class="bLink">
+        Virtual Appointment
+      </div>
+    </div>
+    <div class="rightFloat">
+      <div class="bLink">
+        Search
+      </div>
+      <div class="bLink">
+        Log In
+      </div>
+      <div class="bLink">
+        Wish List
+      </div>
+      <div class="bLink">
+        Cart
+      </div>
+    </div>
+    <div class="banner">
+      Radiant Dearth
+    </div>
+    <div class="bannerLinks">
+      <div class="bLink">
+        Engagement
+      </div>
+      <div class="bLink">
+        Wedding
+      </div>
+      <div class="bLink">
+        Diamonds
+      </div>
+      <div class="bLink">
+        Gemstones
+      </div>
+      <div class="bLink">
+        Jewelry
+      </div>
+      <div class="bLink">
+        About
+      </div>
+    </div>
+  </div>
   <div id="gallery"></div>
   <div id="customerReviews"></div>
 
