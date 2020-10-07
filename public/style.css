@@ -43,7 +43,7 @@ body {
 .floatRight {
   display: flex;
   position: absolute;
-  padding-left: 800px;
+  margin-left: 800px;
   top: 35px;
   width: 400px;
   flex-direction: row;
@@ -52,9 +52,9 @@ body {
 .floatLeft {
   display: flex;
   position: absolute;
-  padding-right: 750px;
+  margin-right: 750px;
   top: 35px;
-  width: 100%;
+  width: 400px;
   flex-direction: row;
   justify-content: center;
 }
