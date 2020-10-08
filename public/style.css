@@ -1,0 +1,90 @@
+body {
+  background-color: white;
+}
+.bannerContainer {
+  display: flex;
+  flex-direction: column;
+  height: 130px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 2px solid lightgrey;
+  margin-bottom: 50px;
+  background-color: white;
+}
+.pinkBanner {
+  background-color: #a95490;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+.banner {
+  font-family: 'Yeseva One', cursive;
+  font-size: 40px;
+}
+.bannerLinks {
+  width: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 20px;
+  margin-bottom: 5px;
+  font-size: 17px;
+}
+.bLink {
+  transition: .5s;
+}
+.bLink:hover {
+  transition: .5s;
+  color: #3e9f8e;
+  cursor: pointer;
+}
+.floatRight {
+  display: flex;
+  position: absolute;
+  margin-left: 800px;
+  top: 35px;
+  width: 400px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.floatLeft {
+  display: flex;
+  position: absolute;
+  margin-right: 750px;
+  top: 35px;
+  width: 400px;
+  flex-direction: row;
+  justify-content: center;
+}
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  border-top: 2px solid lightgrey;
+  margin-top: 50px;
+  padding-top: 10px;
+  background-color: white;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  justify-content: space-around;
+}
+.spacer {
+  width: 50px;
+}
+.smallLink:hover {
+  transition: .5s;
+  color: #3e9f8e;
+  cursor: pointer;
+}
+.smallLink {
+  padding: 0 10px;
+  transition: .5s;
+}
