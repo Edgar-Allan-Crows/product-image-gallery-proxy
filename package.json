@@ -2,7 +2,7 @@
   "name": "product-image-gallery-proxy",
   "version": "1.0.0",
   "description": "Charlie's proxy server.",
-  "main": "./server/index.js",
+  "main": "./index.js",
   "scripts": {
     "start": "nodemon ./server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,7 +19,8 @@
   "homepage": "https://github.com/Edgar-Allan-Crows/product-image-gallery-proxy#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "react": "^16.13.1"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
     "grunt": "^1.3.0"
