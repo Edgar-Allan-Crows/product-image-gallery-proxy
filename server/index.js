@@ -8,13 +8,6 @@ const port = 3099;
 const hostname = 'http://34.228.73.56:3000'
 
 app.use(express.json());
-<<<<<<< HEAD
-app.use(express.static(path.join(__dirname, '../public/')));
-
-app.get('/:product_id', (req, res) => {
-  res.sendFile(path.join(__dirname, '../public/index.html'))
-})
-=======
 app.use(express.static(path.join(__dirname, '../public')));
 app.use('/api/totalScore/:product_id', createProxyMiddleware({ target: hostname, changeOrigin: true }));
 app.use('/api/reviewCount/:product_id', createProxyMiddleware({ target: hostname, changeOrigin: true }));
@@ -23,7 +16,6 @@ app.use('/api/reviewCount/:product_id', createProxyMiddleware({ target: hostname
 app.get('/:product_id', (req, res) => {
   res.sendFile(path.join(__dirname, '../public/index.html'));
 });
->>>>>>> 6c97d232fa1a03249845e01a568ccb6df8b7e051
 
 app.listen(port, () => {
   console.log(`Server is listening at: ${port}`);
