@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, '../public')));
 app.use('/api/totalScore/:product_id', createProxyMiddleware({ target: hostname, changeOrigin: true }));
 app.use('/api/reviewCount/:product_id', createProxyMiddleware({ target: hostname, changeOrigin: true }));
-// app.use('/:product_id', createProxyMiddleware({ target: hostname, changeOrigin: true}));
+app.use('/api/:product_id', createProxyMiddleware({ target: hostname, changeOrigin: true}));
 
 app.get('/:product_id', (req, res) => {
   res.sendFile(path.join(__dirname, '../public/index.html'));
